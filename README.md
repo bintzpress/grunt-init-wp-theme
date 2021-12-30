@@ -23,7 +23,7 @@ To use in your own environment you'll need to do the below.
 On Ubuntu using your developer account:
 
 1. Run the below to download the nvm install script
-     curl -O https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+     curl https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 2. Run the install script
      . ./install.sh
 3. Install nodejs (I use nodejs version 10.24.1)
