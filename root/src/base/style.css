@@ -1,0 +1,18 @@
+/*
+Theme Name: {%= name %}
+Version: {%= version %} 
+Requires at least: 5.0
+Tested up to: 5.6
+Requires PHP: 5.2.4
+Description: {%= description %} 
+Tags: blog
+Author: {%= author_name %} 
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+Do not add your CSS to this file, use a child theme 
+instead: https://codex.wordpress.org/Child_Themes
+*/

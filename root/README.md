@@ -1,0 +1,6 @@
+# Readme
+
+{%= name %}
+
+{%= description %}
+
