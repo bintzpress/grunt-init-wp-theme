@@ -32,8 +32,8 @@ exports.template = function(grunt, init, done) {
       name: 'name',
       message: 'Theme Name',
       default: '',
-      validator: /^[\w\_\-]+$/,
-      warning: 'Must be only letters, numbers, dashes, or underscores.'
+      validator: /^[0-9a-z\_\-]+$/,
+      warning: 'Must be only lower case letters, numbers, dashes, and underscores.'
     }, 
     init.prompt('title'),
     init.prompt('description', 'WordPress theme'),
