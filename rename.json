@@ -1,3 +1,4 @@
 {
-  "template.code-workspace": "{%= name %}.code-workspace"
+  "template.code-workspace": "{%= name %}.code-workspace",
+  "src/locales/template.pot": "src/locales/{%= name %}.pot"
 }

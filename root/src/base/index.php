@@ -12,7 +12,7 @@
 
 <div>
   <h1>{%= title %}</h1>
-  <button class="testButton" type="button">Click Me!</button>
+  <button class="testButton" type="button">__(Click Me!)</button>
 </div>
 <div class="popup">
   <pre>This is a test</pre>
