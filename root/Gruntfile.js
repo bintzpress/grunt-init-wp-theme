@@ -29,13 +29,13 @@ module.exports = function(grunt) {
           }
         ]
       },
-      locales: {
+      languages: {
         files: [
           {
             expand: true,
-            cwd: 'src/locales',
+            cwd: 'src/languages',
             src: ['**/*.pot', '**/*.mo', '**/*.po'],
-            dest: 'build/<%= pkg.name %>/locales'
+            dest: 'build/<%= pkg.name %>/languages'
           }
         ]
       }
@@ -103,7 +103,7 @@ module.exports = function(grunt) {
         keywords: ['__'],
         language: 'PHP',
         encoding: 'UTF-8',
-        dest: 'src/locales/'
+        dest: 'src/languages/'
       },
       files: {
         src: [ 'src/base/**/*.php' ],
@@ -126,10 +126,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('prod', ['env:prod', 'setenv', 'pot', 'clean:build', 'copy:base', 
-    'sass:prod', 'uglify:prod', 'copy:locales', 'compress:dist']);
+    'sass:prod', 'uglify:prod', 'copy:languages', 'compress:dist']);
 
   grunt.registerTask('dev', ['env:dev', 'setenv', 'pot', 'clean:build', 'copy:base', 
-    'sass:dev', 'copy:javascript', 'copy:locales', 'compress:dist']);
+    'sass:dev', 'copy:javascript', 'copy:languages', 'compress:dist']);
 
   grunt.registerTask('deploy', ['shell:wp_deploy']);
   grunt.registerTask('default', ['dev']);
